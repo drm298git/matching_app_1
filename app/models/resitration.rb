@@ -1,0 +1,2 @@
+class Resitration < ApplicationRecord
+end

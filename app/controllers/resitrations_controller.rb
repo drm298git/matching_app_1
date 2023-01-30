@@ -1,0 +1,2 @@
+class ResitrationsController < ApplicationController
+end
