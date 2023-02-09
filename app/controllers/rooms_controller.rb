@@ -1,4 +1,5 @@
 class RoomsController < ApplicationController
+
   def index
     @rooms = Room.all
   end
@@ -18,5 +19,11 @@ class RoomsController < ApplicationController
 
   def destroy
   end
+
+  private
+  def room_informations
+    params[:rooms]
+  end
+
 
 end
