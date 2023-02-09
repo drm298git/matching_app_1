@@ -1,0 +1,15 @@
+= render 'shared/header.html.erb'
+.FirstView
+  section.container
+    h2.FirstView__title
+      | Potepan Shareで
+    br
+    | まだ体験したことのない
+    br
+    | 旅をしよう
+    .FirstViewSearch
+      form[action="https://rails-02-sample.herokuapp.com/rooms" accept-charset="UTF-8" method="get"]
+
+    input#area.form-control.FirstViewSearch__input[placeholder="エリア名を入力" type="text" name="area"]
+    input.btn.FirstViewSearch__button[type="submit" name="commit" value="検索" data-disable-with="検索"]
+= render 'shared/footer.html.erb'

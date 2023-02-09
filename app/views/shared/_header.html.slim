@@ -1,0 +1,15 @@
+header
+  nav.navbar.Navbar
+    .container-fluid
+      a[href="/"]
+
+    img.Navbar__logo[alt="サイトロゴ" src="/assets/common/logo.png"]
+    ul.navbar-nav.flex-row.align-items-center
+
+    li.nav-item.NavItem
+      a.fw-bold.NavItem__link.NavItem__link--login[href="/users/sign_in"]
+        | ログイン
+    li.nav-item.NavItem
+      a.btn.fw-bold.NavItem__link.NavItem__link--register[href="/users/sign_up"]
+        | 新規登録
+    - # 条件分岐によるヘッダーの見た目変更は未実装
