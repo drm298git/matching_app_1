@@ -12,8 +12,10 @@ module MatchingApp
     config.load_defaults 6.1
 
     config.generators do |g|
-      g.assets false# CSS, JavaScriptファイルを自動生成しない
-      g.helper false# helperファイルを自動生成しない
+      g.assets false # CSS, JavaScriptファイルを自動生成しない
+      g.helper false # helperファイルを自動生成しない
+      g.helper false # helper以下にファイルを作成しない
+      g.test_framework false # test以下にファイル作成しない
     end
 
     config.time_zone = 'Tokyo'
